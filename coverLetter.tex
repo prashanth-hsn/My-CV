@@ -27,7 +27,8 @@
 \fontdir[fonts/]
 
 % Color for highlights
-% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, 
+% awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 \colorlet{awesome}{awesome-darknight}
 % Uncomment if you would like to specify your own color
@@ -44,7 +45,8 @@
 % Set false if you don't want to highlight section with awesome color
 \setbool{acvSectionColorHighlight}{false}
 
-% If you would like to change the social information separator from a pipe (|) to something else
+% If you would like to change the social information separator from a pipe (|) 
+% to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
@@ -68,6 +70,9 @@
 %	All of the below lines must be filled out
 %-------------------------------------------------------------------------------
 % The company being applied to
+
+\newcommand{\company}{Dassault Systemes}
+
 \recipient
   {Company Recruitment Team}
   {Some company in Germany}
@@ -107,63 +112,67 @@
 
 % Entry: Write some good entry line.
 
-I am a passionate C++ developer specialized in Scientific computing with over nine years of experience.
-I found this job posted on the r/cpp subreddit and I was very thrilled at the prospect of working for Dassault Systemes, since
-the CAE tools developed by Dassault Systemes are ubiquitous in the industry. With the combination of my C++  
-and CAE software development experience, in addition to my Masters in Computational Sciences, I believe that I would make a great 
-fit for the CFD Software Engineer position.
+I am a passionate C++ developer specialized in Scientific computing with over 
+nine years of experience. I found this job posted on the r/cpp subreddit, and I 
+was very thrilled at the prospect of working for \company{}, since the 
+CAE tools developed by \company{} are ubiquitous in the industry. 
+With the combination of my C++ and CAE software development experience, in 
+addition to my Masters in Computational Sciences, I believe that I would make 
+a great fit for the CFD Software Engineer position.
 
 %Was kannst Du? (What can you do?)
 At my current job with gns-mbh, I work on the development and maintenance of 
-Animator4, an industry standard FEM Post-processor.  
-Working on a software that is widely used in the industry has an advantage 
-that the software we ship gets pushed to the limits and it keeps us on our toes 
-to make sure that it is capable of handling everything that is thorwn at it. 
-This experience has helped me gain an intuition to identify algorithms which 
-can potentially cause performance issues and perform benchmarks to identify any 
-bottlenecks before shipping new features.
+Animator4, an industry standard FEM Post-processor. 
+Working on a software that is widely used in the industry has an advantage that 
+the software we ship gets pushed to the limits, and it keeps us on our toes to 
+make sure that it is capable of handling everything that is thrown at it. 
+This experience has helped me gain an intuition in identifying algorithms which 
+can potentially cause performance issues and perform benchmarks to resolve any 
+bottlenecks before shipping the new version.
 I am the core maintainer for several input interfaces, which parse the FEM 
 result data files. One of them is the Abaqus Odb reader interface. Working with 
 the Abaqus ODB API has made me appreciate how easy it is to work with libraries 
 that are well documented.
-Over the past decade the trend with FEM anlysis is to analyse bigger geometry 
-with finer meshes. Which means larger result files sometimes over 100GB. 
-To achieve good import speeds and low memory footprints, I spend considerable time
-in benchmarking the algorithms and data structures using tools such as gprof, 
-intel-vtune, valgrind:massif etc. 
-
-Observing the current trend in language feature development and modern computer 
-hardwares, it is is more than obvious that writing single thread code today is 
-a crime. To make use of all the modern hardware at our disposal, we have to 
-write multithreaded code and use GPUs for general computing. Although it is 
-difficult to move a 25 years old codebase to exploit the modern hardware, we 
-are trying to write the new code using the modern approches offered by either 
-the language itself or some special libraries. 
- 
+Over the past decade the trend with FEA is to analyze bigger geometry 
+with over a million nodes. Which means larger result files, sometimes over 100 
+GB. To achieve good import speeds and low memory footprints, I spend 
+considerable time in benchmarking the algorithms and data structures using tools
+ such as gprof, intel-vtune, valgrind:massif etc. 
+% Animator4 has over 25 years legacy codebase and to exploit the modern hardware, 
+% we are constantly refactoring code to use multithreaded algorithms, use gpu for 
+% general computations etc.
 Apart from writing c++ code, I also take care of Nightly test result evaluation
 and Official release coordination. This has helped me hone my planning and 
 communication skills.
 
 %Wer bist Du? (who are you?) 
-I studied Masters in Computational Sciences at TU-Braunschweig with focus on 
-Parallel computing, FEM and CFD. For my Master's thesis I upgraded an old 
-Turbomachinery CFD post-processor from Fortran-77 to Fortran-95 and then 
-parallelized using MPI Standards at the MAN Diesel and Turbo. This was a very 
-successful undertaking and my advisor wrote me letter of recommendation, which
-I have attached along with other relevant documents. 
+I studied Masters in Computational Sciences (CSE) at TU-Braunschweig with focus 
+on Parallel computing, FEM and CFD. For my Master's thesis I upgraded a legacy 
+Turbo machinery CFD post-processor from Fortran-77 to Fortran-95 and then 
+parallelized using MPI Standards at MAN Diesel and Turbo, and it was a very 
+successful undertaking. One of the reason why I choose CSE was because of my job
+ at Silver-Atena Bangalore as a software engineer. I had finished bachelor in 
+ Mechanical Engineering and found a job as software engineer. I  
 
-%Warum willst Du gerade zu diesem Unternehmen? (Why do you want to join this company?)
-%I have a lot of fun solving complex algorithmic and architecural problems. I appreciate the dynamic nature of the software engineering. from the programming language to the tooling, everything keeps evolving at a rapid pace. For example since 2011, C++ standards commitee is churning out major updates every three years. It is exciting to try new feature of the language and witness the direction in which computing is headed.
+%Warum willst Du gerade zu diesem Unternehmen? (Why do you want to join this 
+% company?) 
+What drives me as a software developer is the stories of impact the software has
+ on the user's job. I believe \company{}'s software has always been a 
+ game-changer, pushing the boundaries of what can be achieved with 3d modeling 
+and numerical simulation. This is a major motivation for my desire to work for 
+\company{}. And the role of a CFD solver developer makes it even more exciting, 
+as I always wanted to work on scientific computing software where I can put my 
+practical c++ development experience and the theoretical knowledge on CFD, 
+mathematics to practice.
 
+%Was hat das Unternehmen davon, wenn es Dich einstellt? (What does the company 
+% benefit from if it hires you
 
+I am very excited about the work of \company{} and welcome the opportunity to 
+speak with you further about the career opportunities at \company{} and how I 
+can contribute. Thank you for your time and consideration. 
 
-%Was hat das Unternehmen davon, wenn es Dich einstellt? (What does the company benefit from if it hires you
-I throughly enjoy solving challenging problems with designing algorithms and 
-data structures. 
-I believe good Software takes more than just good engineers. It takes a team with good communication,
- honest critique, fair appreciation and open culture.
-
-
+ 
 \end{cvletter}
 
 
