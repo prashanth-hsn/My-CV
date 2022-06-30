@@ -74,8 +74,8 @@
 \newcommand{\company}{Dassault Systemes}
 
 \recipient
-  {Company Recruitment Team}
-  {Some company in Germany}
+  {\company{} HR}
+  {\company{}}
 % The date on the letter, default is the date of compilation
 \letterdate{\today}
 % The title of the letter
@@ -115,7 +115,7 @@
 I am a passionate C++ developer specialized in Scientific computing with over 
 nine years of experience. I found this job posted on the r/cpp subreddit, and I 
 was very thrilled at the prospect of working for \company{}, since the 
-CAE tools developed by \company{} are ubiquitous in the industry. 
+CAE tools developed by \company{} are ubiquitous in the industry. \newline{}
 With the combination of my C++ and CAE software development experience, in 
 addition to my Masters in Computational Sciences, I believe that I would make 
 a great fit for the CFD Software Engineer position.
@@ -126,43 +126,38 @@ Animator4, an industry standard FEM Post-processor.
 Working on a software that is widely used in the industry has an advantage that 
 the software we ship gets pushed to the limits, and it keeps us on our toes to 
 make sure that it is capable of handling everything that is thrown at it. 
-This experience has helped me gain an intuition in identifying algorithms which 
-can potentially cause performance issues and perform benchmarks to resolve any 
-bottlenecks before shipping the new version.
-I am the core maintainer for several input interfaces, which parse the FEM 
-result data files. One of them is the Abaqus Odb reader interface. Working with 
-the Abaqus ODB API has made me appreciate how easy it is to work with libraries 
-that are well documented.
 Over the past decade the trend with FEA is to analyze bigger geometry 
-with over a million nodes. Which means larger result files, sometimes over 100 
+with several million nodes. Which means larger result files, sometimes over 100 
 GB. To achieve good import speeds and low memory footprints, I spend 
 considerable time in benchmarking the algorithms and data structures using tools
- such as gprof, intel-vtune, valgrind:massif etc. 
-% Animator4 has over 25 years legacy codebase and to exploit the modern hardware, 
-% we are constantly refactoring code to use multithreaded algorithms, use gpu for 
-% general computations etc.
+ such as gprof, intel-vtune, valgrind:massif etc.
+This experience has helped me gain an intuition to recognize patterns in code
+which can potentially cause issues.   
+I am the core maintainer for several input interfaces, which parse such FEM 
+result data files. The data formats range from simple ascii data to hdf5, binary, 
+xml etc. So I am quite proficient in importing and exporting scientific data. 
+I also write shader programs for rendering fem geometry and results. This has 
+improved my skills in gpu programming for 3d graphics using opengl standards.
 Apart from writing c++ code, I also take care of Nightly test result evaluation
-and Official release coordination. This has helped me hone my planning and 
+and the Official release coordination. This has helped me hone my planning and 
 communication skills.
 
 %Wer bist Du? (who are you?) 
 I studied Masters in Computational Sciences (CSE) at TU-Braunschweig with focus 
 on Parallel computing, FEM and CFD. For my Master's thesis I upgraded a legacy 
 Turbo machinery CFD post-processor from Fortran-77 to Fortran-95 and then 
-parallelized using MPI Standards at MAN Diesel and Turbo, and it was a very 
-successful undertaking. One of the reason why I choose CSE was because of my job
- at Silver-Atena Bangalore as a software engineer. I had finished bachelor in 
- Mechanical Engineering and found a job as software engineer. I  
+parallelized it using MPI Standards at MAN Diesel and Turbo. This was a very 
+successful undertaking.     
 
 %Warum willst Du gerade zu diesem Unternehmen? (Why do you want to join this 
 % company?) 
 What drives me as a software developer is the stories of impact the software has
- on the user's job. I believe \company{}'s software has always been a 
- game-changer, pushing the boundaries of what can be achieved with 3d modeling 
+ on the user's work. I believe \company{}'s software has always been a 
+ game-changer, pushing the boundaries of what can be achieved with 3d modelling 
 and numerical simulation. This is a major motivation for my desire to work for 
-\company{}. And the role of a CFD solver developer makes it even more exciting, 
+\company{}. And the role of CFD solver developer makes it even more exciting, 
 as I always wanted to work on scientific computing software where I can put my 
-practical c++ development experience and the theoretical knowledge on CFD, 
+practical c++ development experience and the theoretical knowledge on CFD and
 mathematics to practice.
 
 %Was hat das Unternehmen davon, wenn es Dich einstellt? (What does the company 
