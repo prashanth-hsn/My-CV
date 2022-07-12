@@ -1,0 +1,7 @@
+1. Master Certificate: Y
+2. Bachelor Certificate: N
+3. DSH Certificate: N
+4. Experience Certificate: N
+5. HLRS Certificate: N
+
+
