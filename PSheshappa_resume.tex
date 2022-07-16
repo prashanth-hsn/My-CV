@@ -33,7 +33,7 @@
 %\usetikzlibrary{fit} % For fitting Nodes to a set of Coordinates
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -65,7 +65,7 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
+\photo[rectangle,noedge,left]{./images/RB2_1676}
 \name{Prashanth}{Sheshappa}
 \address{Hinter der Masch 26, 38114, Braunschweig, DE}
 \mobile{(+49) 0176-31424884} 
@@ -74,7 +74,7 @@
 % \github{prashanth-hsn}
 \linkedin{prashanth-sheshappa}
 %%% Optionals
-\position{C++ Software Developer, 9 Years}
+\position{Senior Software Developer, C++}
 
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
@@ -115,11 +115,11 @@
 %-------------------------------------------------------------------------------
 % Signature 
 %-------------------------------------------------------------------------------
-\begin{tikzpicture}
+\tikz{%
   \node (dummy) at (0,0) {};
-  \node (name) at (13,-1) {{\fontsize{10pt}{1em}\bodyfont\slshape\color{lighttext} Prashanth Sheshappa}}; 
-  \node (image1) [inner sep=0, right= 11cm of dummy] {\includegraphics[width=0.25\textwidth]{images/signature_nb2}};
- \end{tikzpicture}
+  \node (name) at (14,-0.5) {{\fontsize{8pt}{1em}\bodyfont\slshape\color{lighttext} Prashanth Sheshappa}}; 
+  \node (image1) [inner sep=0, right= 13cm of dummy] {\includegraphics[width=0.1\textwidth]{images/signature_nb2}};
+}
 %-------------------------------------------------------------------------------
 
 \end{document}
