@@ -1,0 +1,185 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, 
+% awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-darknight}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) 
+% to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+%\photo[circle,noedge,left]{./examples/profile}
+\name{Prashanth}{Sheshappa}
+\position{Senior Software Engineer{\enskip\cdotp\enskip}C++ Developer}
+\address{Hinter der Masch 26, 38114 Braunschweig}
+
+\mobile{(+49) 17631424884}
+\email{prashanth.hsn@gmail.com}
+
+\linkedin{prashanth-sheshappa}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+
+\newcommand{\company}{Dassault Syst\`emes}
+
+\recipient
+  {Recruitment Manager}
+  {\company{}}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Recruitment Manager,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Resume}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Prashanth Sheshappa ~~~·~~~ Cover Letter}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+% Entry: Write some good entry line.
+
+%I am a passionate C++ developer specialized in Scientific computing with over 
+%nine years of experience. I found this job posted on LinkedIn, and I 
+%was very thrilled at the prospect of working for \company{}.
+%, since the CAE tools developed by \company{} are ubiquitous in the industry. \newline{}
+%With the combination of my C++ and CAE software development experience, in 
+%addition to my Masters in Computational Sciences, I believe that I would make 
+%a great fit for the CFD Software Engineer position.
+Having worked with \company{} Abaqus FEA and the C++ API for reading ODB data, 
+I have realized how easy it is to work with libraries which have well documented APIs. 
+Your products have always inspired me, for instance when our team was brainstorming for 
+our Product's Python API, the first thing that came to my mind was Abaqus Python API and 
+I presented the ideas which drew inspirations from the Abaqus Python API. 
+When I found this job posted on LinkedIn, I was very thrilled at the prospect of working 
+for \company{}.
+
+
+%Was kannst Du? (What can you do?)
+At my current job with gns-mbh, I work on the development and maintenance of 
+Animator4, an industry standard FEM Post-processor. 
+Working on a software that is widely used in the industry has an advantage that 
+the software we ship gets pushed to the limits, and it keeps us on our toes to 
+make sure that it is capable of handling everything that is thrown at it. 
+Over the past decade the trend with FEA is to analyze bigger geometry 
+with several million nodes. Which means larger result files, sometimes over 100 
+GB. To achieve good import speeds and low memory footprints, I spend 
+considerable time in benchmarking the algorithms and data structures using tools
+ such as gprof, intel-vtune, valgrind:massif etc.
+This experience has helped me gain an intuition in recognizing patterns in code
+which can potentially cause issues.   
+I am the core maintainer for several input interfaces, which parse the FEM 
+result data files. The data formats range from simple ascii data to hdf5, binary, 
+xml etc. So I/O of scientific data is one of my key skills. 
+I also write shader programs for rendering FEM geometry and results. This has 
+improved my skills in gpu programming for 3d graphics using opengl standards.
+Apart from writing c++ code, I also take care of Nightly test result evaluation
+and the Official release coordination. This has helped me hone my planning and 
+communication skills.
+
+%Wer bist Du? (who are you?) 
+I studied Masters in Computational Sciences (CSE) at TU-Braunschweig with focus 
+on Parallel computing, FEM and CFD. For my Master's thesis I upgraded a legacy 
+Turbo machinery CFD post-processor from Fortran-77 to Fortran-95 and then 
+parallelized it using MPI Standards at MAN Diesel and Turbo. This was a very 
+successful undertaking.     
+
+%Warum willst Du gerade zu diesem Unternehmen? (Why do you want to join this 
+% company?) 
+What drives me as a software developer is the stories of impact the software has
+ on the user's work. I believe \company{}'s software has always been a 
+ game-changer, pushing the boundaries of what can be achieved with 3d modelling 
+and numerical simulation. This is a major motivation for my desire to work for 
+\company{}. And the opportunity to work with multi-physics team makes it even 
+more exciting, as I can advance my knowledge in scientific computing and learn
+from the best in the business. 
+
+%Was hat das Unternehmen davon, wenn es Dich einstellt? (What does the company 
+% benefit from if it hires you
+
+I am very excited about the work of \company{} and welcome the opportunity to 
+speak with you further about the career opportunities at \company{} and how I 
+can contribute. Thank you for your time and consideration. 
+
+ 
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
